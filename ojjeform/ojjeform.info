@@ -1,0 +1,8 @@
+name = Ojjeform
+description = Provides custom form styling functionality
+package = More Media
+core = 7.x
+version = 7.x-1.0
+
+stylesheets[all][] = css/ojjeform.css
+scripts[] = js/jquery.ojjeform.js
