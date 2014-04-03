@@ -170,5 +170,10 @@
             return false;
         });
         
+        forms.on('reset', function() {
+          var form = $(this);
+          form.find('.active').removeClass('active');
+        });
+        
     };
 })(jQuery);
