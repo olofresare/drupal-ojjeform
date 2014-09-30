@@ -72,7 +72,7 @@
                         selectedLi.text(selectedValue);
                     }        
                     
-                    selectList.slideUp(200, function() {
+                    selectList.slideUp(0, function() {
                         selectList.removeClass('open');
                     });
                     
