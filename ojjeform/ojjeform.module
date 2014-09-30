@@ -1,3 +1,8 @@
 <?php
 
-
+function ojjeform_init() {
+	$ojjeform_path = drupal_get_path('module', 'ojjeform');
+	drupal_add_js($ojjeform_path . '/js/jquery.ojjeform.js', 'file');
+	drupal_add_js($ojjeform_path . '/js/ojjeform.js', 'file');
+	drupal_add_css($ojjeform_path . '/css/ojjeform.css', 'file');
+}
