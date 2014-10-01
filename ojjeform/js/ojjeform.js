@@ -8,11 +8,10 @@
     if ($languageSwitcherForm.length > 0) {
       var formOptions = {
         types: {
-          checkbox: false,
-          radio: false,
-          select: true,
-          textfield: false,
-          textarea: false
+			    checkbox: false,
+			    radio: false,
+			    select: true,
+			    submit: false
         }
       };
       $.ojjeform($languageSwitcherForm, formOptions);

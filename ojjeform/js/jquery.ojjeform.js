@@ -4,12 +4,10 @@
 		/* Set our default settings */
 		var defaults = {
 			types: {
-			    textfield: false,
 			    checkbox: false,
 			    radio: false,
 			    select: false,
-			    submit: false,
-			    textarea: false
+			    submit: false
 			}
 		};
 
@@ -18,26 +16,20 @@
 
         forms.each(function(e, v) {
             var form = $(v);
-            var formItems = form.find('input:not([type=hidden]), select, textarea');
+            var formItems = form.find('input[type=checkbox], input[type=radio], input[type=submit], select');
             form.addClass('ojjeform');
             
-            if (settings.types.textfield == false) {
-                formItems = formItems.not('[type=text]');
-            }
             if (settings.types.checkbox == false) {
                 formItems = formItems.not('[type=checkbox]');
             }
             if (settings.types.radio == false) {
                 formItems = formItems.not('[type=radio]');
             }
-            if (settings.types.submit == false) {
-                formItems = formItems.not('[type=submit]');
-            }
             if (settings.types.select == false) {
                 formItems = formItems.not('select');
             }
-            if (settings.types.textarea == false) {
-                formItems = formItems.not('textarea');
+            if (settings.types.submit == false) {
+                formItems = formItems.not('[type=submit]');
             }
             
             formItems.each(function(i, o) {
